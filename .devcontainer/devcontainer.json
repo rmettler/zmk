@@ -13,9 +13,12 @@
     "type=volume,source=rmettler-zmk-zephyr-modules,target=${containerWorkspaceFolder}/modules",
     "type=volume,source=rmettler-zmk-zephyr-tools,target=${containerWorkspaceFolder}/tools"
   ],
-  "extensions": ["ms-vscode.cpptools"],
-  "settings": {
-    "terminal.integrated.shell.linux": "/bin/bash"
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.cpptools"
+      ]
+    }
   },
   "forwardPorts": [3000]
 }
