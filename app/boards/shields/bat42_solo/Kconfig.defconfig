@@ -1,0 +1,6 @@
+if SHIELD_BAT42_SOLO
+
+config ZMK_KEYBOARD_NAME
+    default "bat42 solo"
+
+endif

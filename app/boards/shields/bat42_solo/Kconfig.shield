@@ -1,0 +1,2 @@
+config SHIELD_BAT42_SOLO
+    def_bool $(shields_list_contains,bat42_solo)

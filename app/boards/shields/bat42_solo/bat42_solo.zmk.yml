@@ -1,0 +1,10 @@
+file_format: "1"
+id: bat42_solo
+name: bat42 solo
+type: shield
+url: https://github.com/rmettler/zmk
+requires: [nice_nano_v2]
+exposes: [nice_view]
+features:
+  - keys
+  - display
