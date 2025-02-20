@@ -9,15 +9,17 @@
   "mounts": [
     "type=volume,source=rmettler-zmk-root-user,target=/root",
     "type=bind,source=${localWorkspaceFolder}/../zmk-config,target=/workspaces/zmk-config",
+    "type=volume,source=rmettler-zmk-modules,target=/workspaces/zmk-modules",
     "type=volume,source=rmettler-zmk-zephyr,target=${containerWorkspaceFolder}/zephyr",
     "type=volume,source=rmettler-zmk-zephyr-modules,target=${containerWorkspaceFolder}/modules",
     "type=volume,source=rmettler-zmk-zephyr-tools,target=${containerWorkspaceFolder}/tools"
   ],
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-vscode.cpptools"
-      ]
+      "extensions": ["ms-vscode.cpptools"],
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      }
     }
   },
   "forwardPorts": [3000]
